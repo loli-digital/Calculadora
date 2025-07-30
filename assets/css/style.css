@@ -1,5 +1,6 @@
 :root {
-    --bg-color: hsl(0, 2%, 18%);
+    --bg-color: hsl(0, 4%, 9%);
+    /*--bg-color: hsl(0, 2%, 18%);*/
     --hover-btn-color: hsl(0, 4%, 16%);
     --igual-color: hsla(303, 58%, 43%, 0.66);
     --hover-igual-color: hsla(303, 58%, 43%, 0.848);
@@ -47,7 +48,7 @@ p {
 
         section img {
             width: 30rem;
-            filter: opacity(0.5);
+            filter: opacity(0.7);
             transition: all 200ms ease-in-out;
             
             &.perro-izq {
