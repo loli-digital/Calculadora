@@ -5,3 +5,6 @@
     <li>CSS</li>
     <li>JavaScript</li>
 </ul>
+
+<p>Resultado:</p>
+<img src="miniatura.png" alt="Calculadora">
