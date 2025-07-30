@@ -15,12 +15,19 @@ html {
 }
 
 body {
-    min-height: 100vh;
     background-color: var(--bg-color);
     font-family: var(--font-family);
+}
 
-    display: flex;
-    flex-direction: column;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
@@ -37,49 +44,14 @@ p {
 }
 
 .layout {
-    min-width: 100vw;
-    min-height: 100%;
-    padding-bottom: 5rem;
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
-    flex-grow: 1;
-
-        section img {
-            max-width: 30rem;
-            filter: opacity(0.7);
-            transition: all 200ms ease-in-out;
-            
-            &.perro-izq {
-                left: 50%;
-                
-                &:hover {
-                    filter: drop-shadow(0 0 0.75rem hsl(52, 83%, 56%));
-                }
-            }
-
-            &.perro-der {
-                right: 50%;
-
-                &:hover {
-                    filter: drop-shadow(0 0 0.75rem hsl(19, 71%, 34%));
-                }
-            }
-
-            &.perro-izq, &.perro-der {
-                position: relative;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-        
-    }
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
     
     .calculadora {
         width: 35rem;
         padding: 3rem;
-        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
@@ -133,7 +105,6 @@ p {
             }
         }
     }
-
 }
 
 footer {
