@@ -23,11 +23,6 @@ body {
     line-height: 1.5;
 }
 
-ul,
-ol {
-    list-style: none;
-}
-
 a {
     display: block;
     text-decoration: none;
@@ -38,25 +33,4 @@ a {
 
 p a {
     display: inline;
-}
-
-img,
-video,
-iframe,
-picture,
-figure {
-    display: block;
-    max-width: 100%;
-}
-
-form,
-input,
-select,
-textarea,
-button,
-label {
-    display: block;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
 }
